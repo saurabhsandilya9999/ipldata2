@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>
+        IPL visualization
+    </title>
+</head>
+
+<body>
+    <h1 style="text-align: center">IPL Dataset visualization</h1>
+     <div class = "container"  style = "margin: 25px 0px 10px 0px;">
+
+    <form id='query'>
+        <label class ="col"><strong>Enter Year: </strong><input type="number" min="2008" max="2019" name="year"></label>
+        <input type="submit" class = "button">
+    </form>
+    <div 
+    id="custom-economy-bowlers" 
+    style = " margin: 15px 5px auto"></div></div>
+    <div id="matches-played-per-year" class="container"  style = "margin: 25px 0px 10px 0px;"></div>
+    <div id="matches-won-by-each-team" class="container"  style = "margin: 25px 0px 10px 0px;"></div>
+    <div id="extra-runs" class="container"  style = "margin: 25px 0px 10px 0px;"></div>
+    <div id="economy-bowlers" class="container"  style = "margin: 25px 0px 10px 0px;"></div>
+    <div id="stadiums" class="container"  style = " margin: 25px 0px 10px 0px;"></div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
